@@ -6,3 +6,6 @@ build
 
 #Ignore folder
 /lib/screen/
+/lib/.settings
+.settings
+.project
