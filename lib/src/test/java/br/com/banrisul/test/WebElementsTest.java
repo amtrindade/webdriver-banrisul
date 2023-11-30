@@ -9,6 +9,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -52,6 +53,7 @@ class WebElementsTest {
 		assertEquals(nome, textFieldEnable.getAttribute("value"));
 	}
 	
+	@Disabled("Bug registrado id 45612313")
 	@Test
 	public void testValidaDisableTextField() throws InterruptedException {
 		WebElement tfDisable = driver.findElement(By.name("txtbox2"));
